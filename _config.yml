@@ -1,0 +1,18 @@
+# Site settings
+title: Webcamp Maribor 2015
+email: 
+description: "Webcamp Maribor 2015"
+baseurl: ""
+url: ""
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+
+sass:
+    sass_dir: assets/stylesheet/_sass
+    style: compressed
+
+
