@@ -1,0 +1,17 @@
+@mixin futuraN4() {
+    font-family: "futura-pt",sans-serif;
+    font-weight: 400;
+}
+
+@mixin futuraN7() {
+    font-family: "futura-pt",sans-serif;
+    font-weight: 700;
+}
+
+.u-futura-4 {
+	@include futuraN4();
+}
+
+.u-futura-7 {
+	@include futuraN7();
+}
