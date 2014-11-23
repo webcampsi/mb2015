@@ -9,13 +9,13 @@
 }
 
 .intro {
-	position:absolute;
-	top:15%;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-  	-ms-transform: translateX(-50%);
-  	transform: translateX(-50%);
-	margin: 0;
+	// position:absolute;
+	margin-top: 15%;
+	// left: 50%;
+	// -webkit-transform: translateX(-50%);
+	// -ms-transform: translateX(-50%);
+	// transform: translateX(-50%);
+	// margin: 0;
 
 	.logo {
 		height: 100px;
@@ -47,15 +47,14 @@
 	#mc_embed_signup {
 		font-size: 16px;
 
+		form {
+			padding-left: 0;
+		}
+
 		.indicates-required {
 			margin-top: 0;
 			color: white;
 			margin-right: 5%;
-		}
-
-		h2 {
-			color: white;
-			margin: 15px 0 0;
 		}
 
 		.mc-field-group {
@@ -86,6 +85,14 @@
 			}
 		}		
 	}
+}
+
+.share-wrapper {
+	margin-top: 20px;
+}
+
+.footer-wrapper {
+	margin-top: 40px;
 }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
