@@ -10,7 +10,8 @@
 
 .intro {
 	// position:absolute;
-	margin-top: 15%;
+	margin-top: 7%;
+	text-align:center;
 	// left: 50%;
 	// -webkit-transform: translateX(-50%);
 	// -ms-transform: translateX(-50%);
@@ -21,26 +22,39 @@
 		height: 100px;
 		width: auto;
 		display: inline-block;
+		margin-left: -105px;
 	}
 
 	.title-text {
 		color: white;
 		display: inline-block;
 		vertical-align: middle;
-		margin-left: 15px;
 		
 		.title-1 {	
-			font-size: 64px;
-			line-height: 60px;
+			font-size: 60px;
+			line-height: 56px;
 		}
 		.title-2 {	
-			font-size: 50px;
-			line-height: 46px;
+			font-size: 46px;
+			line-height: 42px;
+		}
+	}
+
+	.time {
+		text-align:center;
+		padding: 10px 0;	
+				
+		.time-small {
+		font-size: 25px;
+		line-height: 35px;
+		}
+		.time-big {	
+			font-size: 27px;
 		}
 	}
 
 	.form {
-		margin-top: 50px;
+		margin-top: 20px;
 		background-color: transparent;
 	}
 
@@ -89,10 +103,18 @@
 
 .share-wrapper {
 	margin-top: 20px;
+
+	h2 {
+		font-size: 1.4em;
+	}
 }
 
 .footer-wrapper {
 	margin-top: 40px;
+
+	a {
+		color: #c60;
+	}
 }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
@@ -105,7 +127,39 @@
 	top:5%;
 
   		.logo {
-			margin-left: 100px;
+			width:100%;
+			text-align:center;
+			margin-left: 0;
 		}
+	}
+}
+
+.btn-twitter {
+	background-color: rgba(255,255,255,0.6);
+	color: rgba($background-color, 0.95);
+
+	&:hover {
+		background-color: rgba(255,255,255,1);
+		color: #55acee;
+	}
+}
+
+.btn-facebook {
+	background-color: rgba(255,255,255,0.6);
+	color: rgba($background-color, 0.95);
+
+	&:hover {
+		background-color: rgba(255,255,255,1);
+		color: #3b5998;
+	}
+}
+
+.btn-google-plus {
+	background-color: rgba(255,255,255,0.6);
+	color: rgba($background-color, 0.95);
+
+	&:hover {
+		background-color: rgba(255,255,255,1);
+		color: #dd4b39;
 	}
 }
