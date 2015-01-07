@@ -1,0 +1,42 @@
+.sponsors {
+	margin-top: 5em;
+	background: $white-trans;
+	width: 100%;
+	padding: 0;
+
+	.sponsors-text {
+		font: {
+			size: 20px;
+			weight: 300;
+		}
+		text-align: left;
+		width: 90%;
+		margin: 0 auto;
+		padding: 10%;
+		min-height: 600px;
+
+		.strong {
+			font-size:  24px;
+			color: $primary-color;
+		}
+	}
+
+	@include MQ(M) {
+		.sponsors  {
+			width: 80%;
+		}
+		.sponsors  {
+			min-height: 800px;
+		}
+	}
+
+
+	@include MQ(L) {
+		.sponsors  {
+			width: 80%;
+		}
+		.sponsors  {
+			min-height: 1000px;
+		}
+	}
+}

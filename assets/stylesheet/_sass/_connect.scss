@@ -1,0 +1,36 @@
+.connect {
+	margin: 5em 0;
+	background: $white-trans;
+	width: 100%;
+	padding: 0;
+
+	.connect-text {
+		font: {
+			size: 20px;
+			weight: 300;
+		}
+		text-align: left;
+		width: 90%;
+		margin: 0 auto;
+		padding: 10%;
+		min-height: 600px;
+
+		a {
+			color: $primary-color;
+			padding: 0 5px;
+		}
+	}
+
+	@include MQ(M) {
+		.connect-text {
+			padding: 5%;
+		}		
+	}
+
+	@include MQ(L) {
+		.connect-text {
+			padding: 5%;
+		}
+	}
+}
+

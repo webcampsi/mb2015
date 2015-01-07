@@ -14,5 +14,3 @@ permalink: pretty
 sass:
     sass_dir: assets/stylesheet/_sass
     style: compressed
-
-

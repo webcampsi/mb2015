@@ -1,0 +1,14 @@
+---
+layout: blog
+---
+<div class="container section-posts">
+	<h2 class="meetup">{{ page.title }}</h2>
+		<div class="date">
+			{{ page.date | date_to_string }}
+		</div>
+	<div class="post">
+		<p>
+			{{ content }}
+		</p>
+	</div>
+</div>

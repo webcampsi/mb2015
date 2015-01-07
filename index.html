@@ -1,68 +1,94 @@
 ---
-layout: default
+layout: intro
 title: Webcamp Maribor 2015
 ---
 
-<img class="cover" src="{{ site.baseurl }}/assets/images/webcampimg.png" />
-<div class="container">
-	<div class="col-sm-6 col-sm-offset-3 intro">
-		<div class="logo">
-			<img src="{{ site.baseurl }}/assets/images/logo.png">
-		</div>
-		<div class="title-text">
-			<h2 class="title-1"><span class="u-futura-7">Web</span><span class="u-futura-4">camp</span></h2>
-			<h2 class="title-2"><span class="u-futura-4">Maribor</span><span class="u-futura-7">2015</span></h2>
-		</div>
-		<h2 class="time"><span class="time-small u-futura-4">happening in</span><br/><span class="time-small u-futura-7">March</span><span class="time-big u-futura-4">2015</span></h2>
+<div class="about"  id="about">
+	<div class="divider primary">
+		<p>what is webcamp</p>
+	</div>
+	<p class="about-text">BarCamp is an ad-hoc gathering born from the desire for people to share and learn in an open environment.</br>It is an intense event with discussions, demos and interaction from participants who are the main actors of the event. (from barcamp.org).</br></br>WebCamp.si is a sub-genre of the BarCamp that is oriented at the Slovenian Web professional community.</p>
+</div>
 
-		<!-- Begin MailChimp Signup Form -->
-		<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-		<style type="text/css">
-			#mc_embed_signup{clear:left;}
-		</style>
-		<div id="mc_embed_signup" class="form u-futura-4 clearfix">
-			<form action="//webcamp.us9.list-manage.com/subscribe/post?u=fe215c156a9c379ef50c7c68c&amp;id=18c5122cf2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		    	<div class="signup">
-					<h2 class="mailinglist-title">Subscribe to Webcamp.si mailing list<br /> and get news about tickets, talks and events.</h2>
-					<div class="mc-field-group">
-						<label for="mce-FNAME">First Name </label>
-						<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-					</div>
-					<div class="mc-field-group">
-						<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-						</label>
-						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-					</div>
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-		    		<div style="position: absolute; left: -5000px;">
-		    			<input type="text" name="b_fe215c156a9c379ef50c7c68c_18c5122cf2" tabindex="-1" value="">
-		    		</div>
-		    		<div class="clear">
-		    			<input type="submit" value="Subscribe" name="subscribe" class="button pull-right">
-		    		</div>
-		    	</div>
-			</form>
-		</div>
-		<!--End mc_embed_signup-->
+<div class="divider transparent">
+</div>
+<div class="location" id="location">
+	<div class="divider primary">
+		<p>how to get there</p>
 	</div>
-	<div class="col-sm-6 col-sm-offset-3 share-wrapper clearfix">
-		<h2 class="u-futura-7">.. and spread the word!</h2>
-		<a class="btn btn-lg btn-social-icon btn-twitter" href="https://twitter.com/webcampsi">
-    		<i class="fa fa-twitter"></i>
-  		</a>
-		<a class="btn btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/webcamp.si">
-    		<i class="fa fa-facebook"></i>
-  		</a>
-  		<!--
-		<a class="btn btn-lg btn-social-icon btn-google-plus" href="#">
-    		<i class="fa fa-google-plus"></i>
-  		</a>
-  		-->
-	</div>
-	<div class="col-sm-6 col-sm-offset-3 footer-wrapper clearfix u-futura-4">
-		<p>Need to get in touch? E-mail us at <a href="mailto:info@webcamp.si">info@webcamp.si</a> or twit to <a href="https://twitter.com/webcampsi">@webcampsi</a></p>
+	<p class="location-text">This year webcamp takes place in beautiful Maribor. </p>
+	<div class="locaton-div">
 	</div>
 </div>
+
+<div class="divider transparent">
+</div>
+<div class="schedule" id="schedule">
+	<div class="divider primary">
+		<p>plan ahead</p>
+	</div>
+	<p class="schedule-text">comming soon...</p>
+	<div class="schedule-div">
+	</div>
+</div>
+
+<div class="divider transparent">
+</div>
+<div class="talks" id="talks">
+	<div class="divider primary">
+		<p>who's talking</p>
+	</div>
+	<p class="talks-text">to be announced...</p>
+	<div class="section-members">
+		{% for member in site.data.members %}
+				<div class="member">
+					<a class="member-name" href="/members/{{ member.name|downcase }}/">
+						<img class="" src="">
+						{{ member.name }}
+					</a>
+				</div>
+		{% endfor %}
+	</div>
+	<div class="talks-div">
+	</div>
+</div>
+
+<div class="divider transparent">
+</div>
+<div class="tickets" id="tickets">
+	<div class="divider primary">
+		<p>tickets tickets</p>
+	</div>
+	<p class="tickets-text">comming soon...</p>
+	<div class="tickets-div">
+	</div>
+</div>
+
+<div class="divider transparent">
+</div>
+<div class="sponsors" id="sponsors">
+	<div class="divider primary">
+		<p>thank you</p>
+	</div>
+	<p class="sponsors-text">We would like to thank our wonderful sponsors:</p>
+	<div class="sponsors-div">
+	</div>
+</div>
+
+<div class="divider transparent">
+</div>
+<div class="connect" >
+	<div class="divider primary" id="connect">
+		<p>let's connect</p>
+	</div>
+	<p class="connect-text">
+	Questions? Problems? Ideas!</p>
+	<div class="connect-div">
+	</div>
+</div>
+
+<footer>
+	<div class="divider black">
+	</div>
+</footer>
+</main>
