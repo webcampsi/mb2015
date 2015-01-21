@@ -213,21 +213,11 @@ html, body {
 
 		h1 {
 			width: 100%;
-<<<<<<< HEAD
 			color: white;
 			font-family: $title-font;
 			font-size: 3em;
 			font-weight: 300;
-=======
-			max-width: $M;
-			color: $black;
-			font-family: $body-font;
-			background-color: $off-white-color;
-			font-size: 2.5em;
-			font-weight: 400;
->>>>>>> 001a6363a799671b491d51188e6978e7143d8a90
-			text-align: center;
-			padding: 0 2%;
+			text-align:center;
 		}
 
 		@include MQ(M) {
@@ -238,23 +228,12 @@ html, body {
 
 		h2 {
 			padding: 0 1%;
-<<<<<<< HEAD
 			width: 100%;
 			color: white;
 			font-family: $title-font;
 			font-size: 1.6em;
-=======
-			max-width: $L;
-			color: $off-white-color;
-			background-color: $black;
-			font-family: $title-font;
-			font-size: 3.5em;
->>>>>>> 001a6363a799671b491d51188e6978e7143d8a90
-			font-weight: 300;
-			text-transform: uppercase;
-			text-align: center;
-			letter-spacing: 0.15em;
-			margin-top: 0;
+			text-align:center;
+			text-transform:uppercase;
 		}
 
 		@include MQ(M) {
@@ -322,6 +301,7 @@ html, body {
 				}
 			}
 		}
+
 		
 		.button {
 			background-color: $primary-color;
