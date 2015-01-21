@@ -40,3 +40,17 @@
 		}
 	}
 }
+
+.cfp {
+	margin-top:10em;
+
+	a {
+		text-align:center;
+		font-size:1em;
+		font-family:$body-font;
+		color:$background-color;
+		font-weight:300;
+		padding:5em;
+		text-decoration:underline;
+	}
+}

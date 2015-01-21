@@ -99,10 +99,6 @@ html, body {
 	@include font-smoothing;
 
 	@include MQ(M) {
-
-	.header {
-		background-color: $background-color;
-	}
 		@include transition(background-color .3s);
 
 		/* Force Hardware Acceleration in WebKit */
@@ -128,9 +124,7 @@ html, body {
 
 	@include MQ(L) {
 
-		.header {
-		background-color: $background-color;
-	}
+
 		@include transition(background-color .3s);
 
 		/* Force Hardware Acceleration in WebKit */
@@ -145,7 +139,7 @@ html, body {
 			top: -120px;
 			-webkit-transition: -webkit-transform 0.3s;
 			-moz-transition: -moz-transform 0.3s;
-			transition: transform 0.3s;
+			transition: transform 1s;
 		}
 
 		&.is-visible {
@@ -212,18 +206,26 @@ html, body {
 			height: 100px;
 			position:relative;
 			z-index:20;
-			margin-top:25%;
+			margin-top:0;
 			@include center(x);
 		}
 
+
 		h1 {
-			position: absolute;
-			top: 35%;
 			width: 100%;
+<<<<<<< HEAD
 			color: white;
 			font-family: $title-font;
 			font-size: 3em;
 			font-weight: 300;
+=======
+			max-width: $M;
+			color: $black;
+			font-family: $body-font;
+			background-color: $off-white-color;
+			font-size: 2.5em;
+			font-weight: 400;
+>>>>>>> 001a6363a799671b491d51188e6978e7143d8a90
 			text-align: center;
 			padding: 0 2%;
 		}
@@ -234,37 +236,31 @@ html, body {
 			}
 		}
 
-
-		@include MQ(M) {
-			.center-xs {
-				visibility:hidden;
-			}
-		}
-
-		@include MQ(L) {
-			.center-xs {
-				visibility:hidden;
-			}
-		}
-
 		h2 {
-			position: absolute;
-			top: 50%;
 			padding: 0 1%;
+<<<<<<< HEAD
 			width: 100%;
 			color: white;
 			font-family: $title-font;
 			font-size: 1.6em;
+=======
+			max-width: $L;
+			color: $off-white-color;
+			background-color: $black;
+			font-family: $title-font;
+			font-size: 3.5em;
+>>>>>>> 001a6363a799671b491d51188e6978e7143d8a90
 			font-weight: 300;
 			text-transform: uppercase;
 			text-align: center;
 			letter-spacing: 0.15em;
+			margin-top: 0;
 		}
 
 		@include MQ(M) {
 			h2 {
 				padding: 0 1%;
-				font-size: 3.2em;
+				font-size: 2.8em;
 				top: 55%;
 			}
 		}
@@ -272,11 +268,83 @@ html, body {
 	@include MQ(L) {
 		h2 {
 			padding: 0 2%;
-			font-size: 3.2em;
+			font-size: 2.8em;
 			top: 55%;	
 		}
 	}
+
+	.form {
+		background-color: transparent;
+	
+
+	#mc_embed_signup {
+		font-size: 16px;
+
+		form {
+			padding-left: 0;
+			margin-top:2em;
+
+			h2 {
+				font-family: $body-font;
+				text-transform: none;
+				font-weight:300;
+				margin-top:5px;
+				text-align: left;
+			}
+
+			.signup {
+				width: 75%;
+				max-width:600px;
+				margin: 0 auto;
+			}
+		}
+
+		.indicates-required {
+			margin-top: 0;
+			color: white;
+			margin-right: 5%;
+		}
+
+		.mc-field-group {
+			color: white;
+
+			label {
+				font-weight: lighter;
+			}
+
+			input {
+				border: none;
+				color: #c60;
+				background-color: rgba(255,255,255,0.6);
+			
+				&:focus {
+					background-color: rgba(255,255,255,0.9);
+				}
+			}
+		}
+		
+		.button {
+			background-color: $primary-color;
+			margin: 15px 4% 10px 0;
+			color: white;
+			font-family:$title-font;
+		
+			&:hover {
+				background-color: $secondary-color;
+			}
+		}		
+	}
 }
+}
+
+.share-wrapper {
+	margin-top: 20px;
+
+	h2 {
+		font-size: 1.4em;
+	}
+}
+
 
 .main-content {
 	position: absolute;
@@ -319,6 +387,24 @@ html, body {
 		}
 	}
 }
+
+.centeredElement {
+position: relative;
+top:0;
+z-index:1;
+}
+
+@include MQ(M) {
+			.centeredElement  {
+				margin-top:15%;
+			}
+		}
+
+@include MQ(L) {
+			.centeredElement  {
+				margin-top:15%;
+			}
+		}
 
 .black {
 	background: $black;

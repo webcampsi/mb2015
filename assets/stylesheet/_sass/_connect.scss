@@ -30,6 +30,50 @@
 	@include MQ(L) {
 		.connect-text {
 			padding: 5%;
+<<<<<<< HEAD
+=======
+			text-align: center;
+		}
+	}
+
+	.connect-div {
+		width: 90%;
+		position: relative;
+		margin-left: 5%;
+		display: inline;
+
+
+		.connection {
+			width: 70%;
+			margin-top: 1%;
+			margin-left: 15%;
+			border: 3px solid $black;
+
+			&:hover {
+				background: $black;
+			}
+
+			a {
+				color: $primary-color;
+
+				&:hover {
+					color: $off-white-color;
+				}
+
+				.projects-img {
+					padding: 1em 3em;
+				}
+
+				.connection-description {				
+					position: relative;
+					display: block;
+					width: 70%;
+					margin: 0 auto;
+					text-align: center;
+					font-weight: 300;
+				}		
+			}
+>>>>>>> 001a6363a799671b491d51188e6978e7143d8a90
 		}
 	}
 }

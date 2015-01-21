@@ -3,21 +3,31 @@
 	background: $white-trans;
 	width: 100%;
 	padding: 0;
+	padding-bottom: 5%;
 
 	.location-text {
 		font: {
 			size: 20px;
 			weight: 300;
 		}
-		text-align: left;
+		text-align: center;
 		width: 90%;
 		margin: 0 auto;
-		padding: 10%;
-		min-height: 600px;
+		padding: 5%;
 
 		.strong {
 			font-size:  24px;
 			color: $primary-color;
+		}
+	}
+
+	.location-div{
+		width: 100%;
+		text-align: center;
+
+		iframe {
+			width: 750px;
+			height: 500px;
 		}
 	}
 
