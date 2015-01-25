@@ -1,5 +1,5 @@
 .about {
-	margin-top: 5em;
+	margin-top: 0;
 	background: $white-trans;
 	width: 100%;
 	padding: 0;
@@ -44,13 +44,31 @@
 .cfp {
 	margin-top:10em;
 
-	a {
-		text-align:center;
-		font-size:1em;
-		font-family:$body-font;
-		color:$background-color;
-		font-weight:300;
-		padding:5em;
-		text-decoration:underline;
+	.button-submit {
+
+		width: 100%;
+		height: auto;
+		background-color:$primary-color;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+		margin-top:50px;
+
+		p {
+			font-size: 25px;
+			text-align:center;
+			padding: 15px;
+
+			a {
+				text-align:center;
+				font-family:$body-font;
+				color:white;
+				font-weight:700;
+			}
+		}	
+
+	&:hover  {
+		background-color:$secondary-color;
+	}
 	}
 }
