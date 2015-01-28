@@ -23,13 +23,6 @@ body {
 	}
 }
 
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
 a {
 	color: #fc3714;
 	text-decoration: none;
@@ -140,7 +133,7 @@ html, body {
 			top: -120px;
 			-webkit-transition: -webkit-transform 0.3s;
 			-moz-transition: -moz-transform 0.3s;
-			transition: transform 1s;
+			transition: transform 0.3s;
 		}
 
 		&.is-visible {
