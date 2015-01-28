@@ -1,0 +1,70 @@
+.slide {
+	margin-top: 0;
+	background: $white-trans;
+	width: 100%;
+	padding: 0;
+	text-align:center;
+
+	.content{
+		font: {
+			size: 20px;
+			weight: 300;
+		}
+		text-align: left;
+		width: 90%;
+		margin: 0 auto;
+		padding: 10%;
+
+		.strong {
+			font-size:  24px;
+			color: $primary-color;
+		}
+	}
+
+	@include MQ(M) {
+		.content {
+			width: 80%;
+		}
+	}
+
+
+	@include MQ(L) {
+		.content {
+			width: 80%;
+		}
+	}
+}
+
+iframe {
+	max-width: 800px;
+	width: 75%;
+	height: 400px;
+	padding-bottom: 50px;
+}
+
+.button-submit {
+	width: 100%;
+	height: auto;
+	background-color:$primary-color;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-top:100px;
+
+	p {
+		font-size: 25px;
+		text-align:center;
+		padding: 15px;
+
+		a {
+			text-align:center;
+			font-family:$body-font;
+			color:white;
+			font-weight:700;
+		}
+	}	
+
+	&:hover  {
+		background-color:$secondary-color;
+	}
+}

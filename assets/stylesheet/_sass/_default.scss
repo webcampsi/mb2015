@@ -56,6 +56,7 @@ Main components
 
 html, body {
 	height: 100%;
+	background-color: $background-color;
 }
 
 .logo {
@@ -178,71 +179,66 @@ html, body {
 			color: white;
 		}
 	}
-}	
+}
 
-	@include MQ(M) {
-		max-width: 100%;
-		display: block;
+.intro {
+	height: 140%;
+	z-index: $content-zindex;
+	@include font-smoothing;
+	left: 0;
+
+	.intro-cover {
+  		min-height: 100%;
+  		min-width: 1024px;
+  		width: 105%;
+  		height: auto;
+  		position: fixed;
+  		top: 0;
+  		margin-left: -10px;
+  		overflow-x: hidden;
 	}
 
-	.intro {
-		height: 140%;
-		z-index: $content-zindex;
-		@include font-smoothing;
-		left: 0;
-
-		.intro-cover {
-  			min-height: 100%;
-  			min-width: 1024px;
-  			width: 105%;
-  			height: auto;
-  			position: fixed;
-  			top: 0;
-  			margin-left: -10px;
-  			overflow-x: hidden;
-		}
-
-		.center-xs {
-			height: 100px;
-			position:relative;
-			z-index:20;
-			margin-top:0;
-			@include center(x);
-		}
+	.center-xs {
+		height: 100px;
+		position:relative;
+		z-index:20;
+		margin-top:0;
+		@include center(x);
+	}
 
 
+	h1 {
+		width: 100%;
+		color: white;
+		font-family: $title-font;
+		font-size: 3em;
+		font-weight: 300;
+		text-align:center;
+	}
+
+	@include MQ(M) {
 		h1 {
-			width: 100%;
-			color: white;
-			font-family: $title-font;
-			font-size: 3em;
-			font-weight: 300;
-			text-align:center;
+			font-size: 6em;
 		}
+	}
 
-		@include MQ(M) {
-			h1 {
-				font-size: 6em;
-			}
-		}
+	h2 {
+		padding: 0 1%;
+		width: 100%;
+		color: white;
+		font-family: $title-font;
+		font-size: 1.6em;
+		text-align:center;
+		font-weight:300;
+	}
 
+	@include MQ(M) {
 		h2 {
 			padding: 0 1%;
-			width: 100%;
-			color: white;
-			font-family: $title-font;
-			font-size: 1.6em;
-			text-align:center;
-			font-weight:300;
+			font-size: 2.5em;
+			top: 55%;
 		}
-
-		@include MQ(M) {
-			h2 {
-				padding: 0 1%;
-				font-size: 2.5em;
-				top: 55%;
-			}
-		}
+	}
 
 	@include MQ(L) {
 		h2 {
@@ -255,66 +251,64 @@ html, body {
 	.form {
 		background-color: transparent;
 	
+		#mc_embed_signup {
+			font-size: 16px;
 
-	#mc_embed_signup {
-		font-size: 16px;
+			form {
+				padding-left: 0;
+				margin-top:2em;
 
-		form {
-			padding-left: 0;
-			margin-top:2em;
+				h2 {
+					font-family: $body-font;
+					text-transform: none;
+					font-weight:300;
+					margin-top:5px;
+					text-align: left;
+				}
 
-			h2 {
-				font-family: $body-font;
-				text-transform: none;
-				font-weight:300;
-				margin-top:5px;
-				text-align: left;
-			}
-
-			.signup {
-				width: 75%;
-				max-width:600px;
-				margin: 0 auto;
-			}
-		}
-
-		.indicates-required {
-			margin-top: 0;
-			color: white;
-			margin-right: 5%;
-		}
-
-		.mc-field-group {
-			color: white;
-
-			label {
-				font-weight: lighter;
-			}
-
-			input {
-				border: none;
-				color: #c60;
-				background-color: rgba(255,255,255,0.6);
-			
-				&:focus {
-					background-color: rgba(255,255,255,0.9);
+				.signup {
+					width: 75%;
+					max-width:600px;
+					margin: 0 auto;
 				}
 			}
-		}
 
-		
-		.button {
-			background-color: $primary-color;
-			margin: 15px 4% 10px 0;
-			color: white;
-			font-family:$title-font;
-		
-			&:hover {
-				background-color: $secondary-color;
+			.indicates-required {
+				margin-top: 0;
+				color: white;
+				margin-right: 5%;
 			}
-		}		
+
+			.mc-field-group {
+				color: white;
+
+				label {
+					font-weight: lighter;
+				}
+
+				input {
+					border: none;
+					color: #c60;
+					background-color: rgba(255,255,255,0.6);
+			
+					&:focus {
+						background-color: rgba(255,255,255,0.9);
+					}
+				}
+			}
+
+			.button {
+				background-color: $primary-color;
+				margin: 15px 4% 10px 0;
+				color: white;
+				font-family:$title-font;
+		
+				&:hover {
+					background-color: $secondary-color;
+				}
+			}		
+		}
 	}
-}
 }
 
 .share-wrapper {
@@ -324,7 +318,6 @@ html, body {
 		font-size: 1.4em;
 	}
 }
-
 
 .main-content {
 	position: absolute;
@@ -354,11 +347,11 @@ html, body {
 	}
 
 	@include MQ(M) {
-			p {
-				font-size: 4.5em;
-				margin-top:6%;
-			}
+		p {
+			font-size: 4.5em;
+			margin-top:6%;
 		}
+	}
 
 	@include MQ(L) {
 		p {
@@ -369,22 +362,27 @@ html, body {
 }
 
 .centeredElement {
-position: relative;
-top:0;
-z-index:1;
+	position: relative;
+	top:0;
+	z-index:1;
 }
 
 @include MQ(M) {
-			.centeredElement  {
-				margin-top:15%;
-			}
-		}
+	.centeredElement  {
+		margin-top:15%;
+	}
+}
 
 @include MQ(L) {
-			.centeredElement  {
-				margin-top:15%;
-			}
-		}
+	.centeredElement  {
+		margin-top:15%;
+	}
+}
+
+.responsive-image {
+	width: 250px;
+	max-width:100%;
+}
 
 .black {
 	background: $black;
@@ -393,124 +391,3 @@ z-index:1;
 .primary {
 	background: $primary-color;
 }
-
-.background {
-	background: $background-color;
-}
-
-.white {
-	background: white;
-}
-
-.transparent {
-	width: 100%;
-	margin-top: 4em;
-	background: transparent;
-
-	p {
-		border: solid $black 3px;
-		position: relative;
-		width: 120px;
-		left: 50%;
-		margin-left: -60px;
-		color: $black;
-		font-size: 1em;
-		text-align: center;
-		padding: 0.5em;
-	}
-
-	img {
-		padding: 0;
-		-webkit-animation: pulse 1.5s linear infinite;
-		-moz-animation: pulse 1.5s linear infinite;
-		-ms-animation: pulse 2s linear infinite;
-		animation: pulse 1.5s linear infinite;
-	}
-}
-
-.green {
-	background: $secondary-color;
-	height: 80px;
-	margin: 0;
-	margin-bottom: 3em;
-
-	img {
-		width: 80px;
-		margin-left: -40px;
-	}
-}
-
-.move-up {
-	margin-top: -10em;
-}
-
-
-@keyframes "pulse" {
- 0% {
-    -webkit-transform: scale(1);
-   	-moz-transform: scale(1.2);
-   	-o-transform: scale(1);
-   	-ms-transform: scale(1);
-   	transform: scale(1);
- }
- 50% {
-    -webkit-transform: scale(1.6);
-   	-moz-transform: scale(2);
-   	-o-transform: scale(1.6);
-   	-ms-transform: scale(1.6);
-   	transform: scale(1.6);
- }
- 100% {
-    -webkit-transform: scale(1.3);
-   	-moz-transform: scale(2.4);
-   	-o-transform: scale(1.3);
-   	-ms-transform: scale(1.3);
-   	transform: scale(1.3);
- }
-}
-
-@-moz-keyframes "pulse" {
- 0% {
-   -moz-transform: scale(1.2);
-   transform: scale(1.2);
- }
- 50% {
-   -moz-transform: scale(2);
-   transform: scale(2);
- }
- 100% {
-   -moz-transform: scale(2.4);
-   transform: scale(2.4);
- }
-}
-
-@-webkit-keyframes "pulse" {
- 0% {
-   -webkit-transform: scale(1);
-   transform: scale(1);
- }
- 50% {
-   -webkit-transform: scale(1.6);
-   transform: scale(1.6);
- }
- 100% {
-   -webkit-transform: scale(1.3);
-   transform: scale(1.3);
- }
-}
-
-@-ms-keyframes "pulse" {
- 0% {
-   -ms-transform: scale(1);
-   transform: scale(1);
- }
- 50% {
-   -ms-transform: scale(1.6);
-   transform: scale(1.6);
- }
- 100% {
-   -ms-transform: scale(1.3);
-   transform: scale(1.3);
- }
-}
-
