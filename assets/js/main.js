@@ -2,6 +2,9 @@ $("window").load(function() {
   $("body").removeClass("preload");
 });
 
+
+
+
 jQuery(document).ready(function($){
 	//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
 	var MQL = 768;
@@ -31,5 +34,8 @@ jQuery(document).ready(function($){
 		    this.previousTop = currentTop;
 		});
 	}
+
+	$('#disapear-on-click').on('click', function (){$(this).hide();})
 });
+
 

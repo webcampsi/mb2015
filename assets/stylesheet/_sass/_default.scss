@@ -146,7 +146,6 @@ html, body {
 .nav {
 	max-width: 100%;
 	position: fixed;
-	margin-bottom:0;
 	bottom: 0;
 	right: 0;
 	padding: 1.5em 1em;
@@ -157,6 +156,7 @@ html, body {
 		display: inline-block;
 		margin-left: 1em;
 		padding: 0.3em;
+		margin-bottom:0;
 	}
 
 	a { 
@@ -384,4 +384,27 @@ html, body {
 
 .primary {
 	background: $primary-color;
+}
+
+#disapear-on-click {
+	position: absolute;
+	width: 70%;
+	height: 350px;
+	padding-bottom: 50px; 
+	left: 15%; 
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.3);
+
+
+
+	.location-zoom {
+		right:5%;
+		position:absolute;
+		padding-top:60px;
+		font-family: $title-font;
+	}
+
+
+	&:hover {
+		background: rgba(255, 255, 255, 0.1);
+	}
 }
