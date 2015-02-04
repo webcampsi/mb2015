@@ -36,9 +36,7 @@
 }
 
 iframe {
-	width: 70%;
-	height: 400px;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .button-submit {
@@ -67,4 +65,37 @@ iframe {
 	&:hover  {
 		background-color:$secondary-color;
 	}
+}
+
+.photos {
+	padding-left:0;
+	display:block;
+}
+
+.photos-one {
+	display: inline-block;
+	width:100%;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@include MQ(M) {
+		.photos-one {
+			display: inline-block;
+			width:49%;
+		}
+	}
+
+
+	@include MQ(L) {
+		.photos-one {
+			display: inline-block;
+			width:49%;
+		}
+	}
+.outside-link {
+	margin-top:50px;
 }
