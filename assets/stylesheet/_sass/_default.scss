@@ -364,27 +364,24 @@ html, body {
 		font: {
 			family: $title-font;
 			weight: 400;
-			size: 2em;
+			size: 3em;
 		}
 		display: block;
 		color: white;
 		text-align: right;
 		line-height: 1;
-		margin-top:10%;
 		@include center(y);
 	}
 
 	@include MQ(M) {
 		p {
 			font-size: 3em;
-			margin-top:6%;
 		}
 	}
 
 	@include MQ(L) {
 		p {
 			font-size: 3em;
-			margin-top:4%;
 		}
 	}
 }
@@ -444,5 +441,10 @@ html, body {
 }
 
 footer {
-	padding:20px;
+	text-align:left;
+
+	.footer-links {
+		position:relative;
+		@include center(y);
+	}
 }
