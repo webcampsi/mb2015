@@ -39,7 +39,7 @@ Should you catch yourself behaving disrespectfully, or be confronted as such, ow
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Their names are found here under __Signed__ section, they will be circulating in the crowd, 
 and are easy to find. 
 
-If the matter is especially urgent, please call/contact any of these individuals:
+If the matter is especially urgent, please call/contact:
 
 Jure Čuhalev at +386 41 893 765 
 
