@@ -3,10 +3,14 @@ layout: intro
 title: WebCamp Ljubljana 2015
 ---
 
+
 <div class="slide" id="about">
 	<div class="divider primary">
 		<p>what is webcamp</p>
 	</div>
+	<div class="divider-photo">
+		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3357-2.jpg">
+		</div>
 	<p class="content">
 		WebCamp Ljubljana is the unconference where Web developers share knowledge, experience, and vim configurations.
 		<br /><br />
@@ -21,16 +25,9 @@ title: WebCamp Ljubljana 2015
 	</p>
 </div>
 </div>
-<div class="slide" id="location">
-	<div class="divider primary">
-		<p>location</p>
-	</div>
-	<p class="content">We thank the <a href="http://www.fri.uni-lj.si/en/about/">Faculty of Computer and Information Science in Ljubljana</a> for hosting us. The Faculty is a leading research and teaching institution for information sciences with several active research groups and distinguished alumni.</p>
-		<div id="disapear-on-click"><p class="location-zoom">Click to zoom!</p>
+	<div class="divider-photo">
+		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3398.jpg">
 		</div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2769.021058795885!2d14.472292399999999!3d46.0506782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47652d52dfb93cd7%3A0xbfcd354b74411729!2sVe%C4%8Dna+pot+113%2C+1000+Ljubljana!5e0!3m2!1sen!2ssi!4v1408359697852" frameborder="0" style="border:0; width: 70%;
-	height: 400px;"></iframe>
-</div>
 <div class="slide"  id="cfp">
 	<div class="divider primary">
 		<p>call for proposals</p>
@@ -73,8 +70,12 @@ title: WebCamp Ljubljana 2015
 				<a href='https://webcamp.typeform.com/to/mKF6kS' target="_blank">Apply for IoT Corner</a>
 			</p>
 		</div>
-</div>
+	</div>
 
+</div>
+	<div class="divider-photo">
+		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3366-2.jpg">
+		</div>
 {% comment %}
 </div>
 <div class="slide" id="schedule">
@@ -84,36 +85,43 @@ title: WebCamp Ljubljana 2015
 	<p class="content">comming soon...</p>
 {% endcomment %}
 
-{% comment %}
-<div class="slide" id="talks">
+<!--<div class="slide-transparent" id="talks">
 	<div class="divider primary">
-		<p>who's talking</p>
+		<p>talks / schedule</p>
 	</div>
-	<p class="content">to be announced...</p>
-	<div class="section-members">
+	
+		<div class="members">
 		{% for member in site.data.members %}
-				<div class="member">
-					<a class="member-name" href="/members/{{ member.name|downcase }}/">
-						<img class="" src="">
-						{{ member.name }}
+			<div class="members-one">
+			<a class="" href="/members/{{ member.name|downcase }}/">
+				<div class="talk-info">
+							<h2 class="member-name" href="/members/{{ member.name|downcase }}/">
+							{{ member.name }}
+							</h2>
+							<h2 class="talk-title" href="/members/{{ member.name|downcase }}/">
+							{{ member.title }}
+							</h2>
+							<p class="talk-role">
+							{{ member.role }}
+							</p>
+						</div>
 					</a>
 				</div>
+	
 		{% endfor %}
-	</div>
-	<div class="talks-div">
-	</div>
-</div>
-{% endcomment %}
+	</div>-->
 
+</div>
 <div class="slide" id="talks">
 	<div class="divider primary">
 		<p>talks / schedule</p>
 	</div>
 	<p class="content"><a href="#mailing">Subscibe to our mailing list</a> and you'll be the first to know when the talks are announced. Tickets will also be announced on the mailing list.
 	</p>
-	
-	<div class="tickets-div"></div>
 </div>
+	<div class="divider-photo">
+		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3334-2.jpg">
+		</div>
 <div class="slide" id="tickets">
 	<div class="divider primary">
 		<p>tickets</p>
@@ -127,15 +135,26 @@ title: WebCamp Ljubljana 2015
 		<br /><br />
 		Mailing list subscribers get tickets sooner. <a href="#mailing">Subscribe</a> so you don’t miss yours.
 	</p>
-	<div class="tickets-div">
+</div>
+	<div class="divider-photo">
+		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3326-2.jpg">
+		</div>
+<div class="slide" id="location">
+	<div class="divider primary">
+		<p>location</p>
 	</div>
+	<p class="content">We thank the <a href="http://www.fri.uni-lj.si/en/about/">Faculty of Computer and Information Science in Ljubljana</a> for hosting us. The Faculty is a leading research and teaching institution for information sciences with several active research groups and distinguished alumni.</p>
+		<div id="disapear-on-click"><p class="location-zoom">Click to zoom!</p>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2769.021058795885!2d14.472292399999999!3d46.0506782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47652d52dfb93cd7%3A0xbfcd354b74411729!2sVe%C4%8Dna+pot+113%2C+1000+Ljubljana!5e0!3m2!1sen!2ssi!4v1408359697852" frameborder="0" style="border:0; width: 70%;
+	height: 400px;"></iframe>
 </div>
 <div class="slide" id="partners">
 	<div class="divider primary">
 		<p>partners</p>
 	</div>	
 	<p class="content">
-		<a href="http://www.fri.uni-lj.si/en/about/"><img class="responsive-image" src="/assets/img/fri-logo.png" /></a><br /><br />
+		<a href="http://www.fri.uni-lj.si/en/about/"><img class="responsive-image" src="/assets/img/fri-logo-2.png" /></a><br /><br />
 		This event would not be possible without the generous help of <a href="http://www.fri.uni-lj.si/en/about/">Faculty of Computer and Information Science</a>.
 		<br /><br />
 		They host other relevant events. Check out their <a href="http://www.fri.uni-lj.si/si/novice_in_dogodki/aktivne/">event list</a> and <a href="http://www.fri.uni-lj.si/si/izobrazevanje/">different post-graduate study programmes.</a>
@@ -160,22 +179,10 @@ title: WebCamp Ljubljana 2015
 					<img src="{{ site.baseurl }}/assets/img/2014/IMG_3460.jpg">
 				</div>
 				<div class="photos-one">
-					<img src="{{ site.baseurl }}/assets/img/2014/IMG_3326.jpg">
-				</div>
-				<div class="photos-one">
-					<img src="{{ site.baseurl }}/assets/img/2014/IMG_3334.jpg">
-				</div>
-				<div class="photos-one">
 					<img src="{{ site.baseurl }}/assets/img/2014/IMG_3351.jpg">
 				</div>
 				<div class="photos-one">
-					<img src="{{ site.baseurl }}/assets/img/2014/IMG_3357.jpg">
-				</div>
-				<div class="photos-one">
 					<img src="{{ site.baseurl }}/assets/img/2014/IMG_3355.jpg">
-				</div>
-				<div class="photos-one">
-					<img src="{{ site.baseurl }}/assets/img/2014/IMG_3366.jpg">
 				</div>
 				<div class="photos-one">
 					<img src="{{ site.baseurl }}/assets/img/2014/IMG_3375.jpg">
@@ -192,6 +199,7 @@ title: WebCamp Ljubljana 2015
 			<a href="http://video.webcamp.si/">Here is a link to videos of last years talks! 
 				Check it out!</a>
 		</div>
+	</div>
 	</div>
 </div>
 

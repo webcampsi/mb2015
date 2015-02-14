@@ -1,12 +1,21 @@
-- name: Erika
-  role: long talk
+- name: Erika Pogorelc
+  role: Back-end
+  title: jklsdfmnf
   image: 
-  description: Coming soon
+  description: 
   twitter: ercchy
   github: ercchy
-- name: Alja
-  role: long talk
+- name: Alja Isaković
+  role: Front-end
+  title: Jekyll is awesome and everyone should use it
   image: 
-  description: Coming soon
+  description: 
   twitter: iAlja
   github: iAlja
+- name: Maša Černovšek Logar
+  role: Front-end
+  title: Architects approach to building webs
+  image: 
+  description: 
+  twitter: 
+  github: ViaCoco

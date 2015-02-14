@@ -1,0 +1,68 @@
+.members {
+	padding-left:0;
+	display:block;
+	width:100%;
+
+		text-align: center; 
+		margin: 0 auto;
+		padding: 10%;
+}
+
+.members-one{
+	display: inline-table;
+	margin:2%;
+	width: 17em;
+	height: 17em;
+	@include border-radius(8.5em);
+	background-color:rgba($white-trans, .8);
+}
+
+@include MQ(M) {
+	.members-one {
+	}
+}
+
+@include MQ(L) {
+	.members-one {	
+	}
+}
+
+
+.talk-info {
+	position:relative;
+	margin-top:50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+.member-name {
+		font: {
+			size: 1em;
+			weight: 400;
+		};
+		color: $primary-color;
+}
+
+.talk-title {
+		font: {
+			size: 1em;
+			weight: 300;
+			family: $title-font;
+		};
+		padding: 0 0.75em;
+		color: $background-color;
+		position:relative;
+}
+
+.talk-role {
+		font: {
+			size: 0.8em;
+			weight: 300;
+		};
+		color: white;
+		position:relative;
+}
+
+
