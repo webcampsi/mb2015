@@ -1,34 +1,21 @@
-.members {
+.talks {
+	position:relative;
+	top:15%;
 	padding-left:0;
 	display:block;
-	width:100%;
-
-		text-align: center; 
-		margin: 5% auto;
+	width:90%;
+	text-align: left; 
+	margin: 5% auto;
 }
 
-.members-one{
-	display: inline-table;
-	margin:2%;
-	width: 13em;
-	height: 13em;
-	@include border-radius(6.5em);
+.talks-one{
+	margin-top:5%;
+	padding:20px;
+	position:relative;
+	left:10%;
+	width: 80%;
+	height: auto;
 	background-color:rgba($white-trans, .8);
-
-
-	&:hover {
-		background-color:rgba($white-trans, 1);
-	}
-}
-
-@include MQ(M) {
-	.members-one {
-	}
-}
-
-@include MQ(L) {
-	.members-one {	
-	}
 }
 
 
@@ -68,5 +55,3 @@
 		color: $primary-color;
 		position:relative;
 }
-
-

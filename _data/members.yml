@@ -1,10 +1,3 @@
-- name: Erika Pogorelc
-  role: Back-end
-  title: jklsdfmnf
-  image: 
-  description: 
-  twitter: ercchy
-  github: ercchy
 - name: Alja Isaković
   role: Front-end
   title: Jekyll is awesome and everyone should use it
@@ -12,6 +5,7 @@
   description: 
   twitter: iAlja
   github: iAlja
+  page: alja
 - name: Maša Černovšek Logar
   role: Front-end
   title: Architects approach to building webs
@@ -19,3 +13,5 @@
   description: 
   twitter: 
   github: ViaCoco
+  page: masa
+

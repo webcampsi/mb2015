@@ -75,7 +75,7 @@ html, body {
 	.logo{
 		position: fixed;
 		visibility: visible;
-		margin-left: 0;
+		margin-left: 2%;
 	}
 }
 
@@ -83,6 +83,7 @@ html, body {
 	.logo{
 		position: fixed;
 		visibility: visible;
+		margin-left: 2%;
 	}
 }
 
@@ -151,9 +152,9 @@ html, body {
 	width: 100%;
 	position: fixed;
 	bottom: 0;
-	margin-bottom:0;
+	margin:0;
 	right: 0;
-	padding-left: 1em;
+	padding-right: 1em;
 	text-align: center;
 	background-color: $background-color;
 
@@ -183,25 +184,31 @@ html, body {
 @include MQ(M) {
 	.nav {
 		padding-top:0;
+		text-align: right;
 		@include center(y);
 	}
 
 	ul{
 		margin-top:0;
-		left:5%;
 	}
 }
 
 @include MQ(L) {
 	.nav {
 		padding-top:0;
+		text-align: right;
 		@include center(y);
 	}
 
 	ul{
 		margin-top:0;
-		left:5%;
 	}
+}
+
+.back {
+	@extend .nav;
+	text-align: center;
+	bottom:1em;
 }
 
 .intro {
