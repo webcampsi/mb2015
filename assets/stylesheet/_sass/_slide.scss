@@ -16,8 +16,7 @@
 		padding: 10%;
 
 		.strong {
-			font-size:  24px;
-			color: $primary-color;
+			font-weight:  700;
 		}
 	}
 
@@ -76,19 +75,19 @@ iframe {
 }
 
 @include MQ(M) {
-		.button-submit {
-			width: 40%;
-			margin-left:30%;
-		}
+	.button-submit {
+		width: 40%;
+		margin-left:30%;
 	}
+}
 
 
-	@include MQ(L) {
-		.button-submit{
-			width: 40%;
-			margin-left:30%;
-		}
+@include MQ(L) {
+	.button-submit{
+		width: 40%;
+		margin-left:30%;
 	}
+}
 
 .photos {
 	padding-left:0;
@@ -106,27 +105,50 @@ iframe {
 }
 
 @include MQ(M) {
-		.photos-one {
-			display: inline-block;
-			width:49%;
-		}
+	.photos-one {
+		display: inline-block;
+		width:49%;
 	}
+}
 
 
-	@include MQ(L) {
-		.photos-one {
-			display: inline-block;
-			width:49%;
-		}
+@include MQ(L) {
+	.photos-one {
+		display: inline-block;
+		width:49%;
 	}
+}
 
 .outside-link {
 	margin-top:50px;
 }
 
-
-
 .second-paragraph {
 	margin-top:140px;
 }
 
+.contact {
+	display:block;
+	margin-left:20px;
+
+	p {
+		color:$white-trans;
+		font-weight:300;
+	}
+
+	a {
+		color:$white-trans;
+	}
+}
+
+.social {
+	margin-top: 50px;
+	margin-left:20px;
+	display:inline-table;
+	text-align:center;
+
+	a {
+		position:relative;
+		display:block;
+	}
+}

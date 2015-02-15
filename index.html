@@ -3,7 +3,6 @@ layout: intro
 title: WebCamp Ljubljana 2015
 ---
 
-
 <div class="slide" id="about">
 	<div class="divider primary">
 		<p>what is webcamp</p>
@@ -27,42 +26,17 @@ title: WebCamp Ljubljana 2015
 </div>
 	<div class="divider-photo">
 		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3398.jpg">
-		</div>
+	</div>
 <div class="slide"  id="cfp">
 	<div class="divider primary">
 		<p>IoT corner</p>
 	</div>
 	<div class="content">
-		<!--<h2>Come give us a talk on:</h2>
-		<ul>
-			<li>Front-end (HTML5, CSS, JavaScript, ..)</li>
-			<li>Back-end (Frameworks, Languages, Middleware)</li>
-			<li>DevOps (Virtualization, Orchestration, Practical approaches)</li>
-			<li>or anything web developers care about</li>
-		</ul>
-		<h2>Talk format:</h2>
-		<ul>
-			<li>You have 25 minutes. Your talk should work offline. Screenshots are your best friends.</li>
-			<li>We want interesting stories. Everyone can read a tutorial.</li>
-			<li>We like videos more than demos. Come prepared.</li>
-			<li>You can suggest a 5 minute <i>lightning talk</i> at the venue.</li>
-		</ul>
-		<h2>Timeline:</h2>
-		<ul>
-			<li>Friday, February 13th - Submission deadline</li>
-			<li>Friday, February 20th - We notify The Chosen Ones</li>
-			<li>Monday, February 23rd - We tell everybody</li>
-		</ul>
-		<div class='button-submit'>
-			<p>
-				<a href='https://webcamp.typeform.com/to/j8WNBY' target="_blank">Submit your talk</a>
-			</p>
-		</div>-->
 		<h2>NEW: WebCamp IoT Corner</h2>
-		<p>We’ll also have a dedicated IoT Corner to showcase cool hardware from startups and garage makers. Want to showcase your gadget or project? To get your spot in the corner, you need:</p>
+		<p>We’ll also have a dedicated IoT Corner to showcase <span class="strong">cool hardware from startups and garage makers</span>. Want to showcase your gadget or project? To get your spot in the corner, you need:</p>
 		<ul>
-			<li>Your own crazy/cool hardware that 300 WebCamp attendees can poke.</li>
-			<li>A technical person available for troubleshooting and answering technical questions about your project during WebCamp on March 14th.</li>
+			<li><span class="strong">Your own crazy/cool hardware</span> that 300 WebCamp attendees can poke.</li>
+			<li><span class="strong">A technical person</span> available for troubleshooting and answering technical questions about your project during WebCamp on March 14th.</li>
 		</ul>
 		<p>You can send your application by the end of February. We’ll confirm your spot one week before the event at the latest.</p>
 		<div class='button-submit'>
@@ -71,82 +45,61 @@ title: WebCamp Ljubljana 2015
 			</p>
 		</div>
 	</div>
-
 </div>
-	<div class="divider-photo">
-		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3366-2.jpg">
-		</div>
-{% comment %}
+<div class="divider-photo">	
+	<img src="{{ site.baseurl }}/assets/img/2014/IMG_3366-2.jpg">
 </div>
-<div class="slide" id="schedule">
-	<div class="divider primary">
-		<p>plan ahead</p>
-	</div>
-	<p class="content">comming soon...</p>
-{% endcomment %}
-
 <div class="slide-transparent" id="talks">
 	<div class="divider primary">
 		<p>talks / schedule</p>
 	</div>
-	
-<div class="members">
+	<div class="members">
 	{% for member in site.data.members %}
 		<div class="members-one">
 			<a class="" href="{{ site.baseurl }}/talks/{{ member.page|downcase }}/">
 				<div class="talk-info">
-							<h2 class="member-name" href="/members/{{ member.name|downcase }}/">
+						<h2 class="member-name" href="/members/{{ member.name|downcase }}/">
 							{{ member.name }}
-							</h2>
-							<h2 class="talk-title" href="/members/{{ member.name|downcase }}/">
+						</h2>
+						<h2 class="talk-title" href="/members/{{ member.name|downcase }}/">
 							{{ member.title }}
-							</h2>
-							<p class="talk-role">
+						</h2>
+						<p class="talk-role">
 							[ {{ member.role }} ]
-							</p>
+						</p>
 				</div>
 			</a>
 		</div>
 		{% endfor %}
 	</div>
 </div>
-	<div class="divider-photo">
-		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3334-2.jpg">
-	</div>
+<div class="divider-photo">
+	<img src="{{ site.baseurl }}/assets/img/2014/IMG_3334-2.jpg">
 </div>
-<!--<div class="slide" id="talks">
-	<div class="divider primary">
-		<p>talks / schedule</p>
-	</div>
-	<p class="content"><a href="#mailing">Subscibe to our mailing list</a> and you'll be the first to know when the talks are announced. Tickets will also be announced on the mailing list.
-	</p>
-</div>
-	<div class="divider-photo">
-		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3334-2.jpg">
-		</div>-->
 <div class="slide" id="tickets">
 	<div class="divider primary">
 		<p>tickets</p>
 	</div>
-	<p class="content">
-		While attendance is free, you still need a ticket.
-		<br /><br />
-		Tickets will go out in three rounds: February 18th, February 25th, and March 4th.
-		<br /><br />
-		If you're not from Slovenia, you get first dibs on tickets. <a href="#contact">Let us know</a>
-		<br /><br />
-		Mailing list subscribers get tickets sooner. <a href="#mailing">Subscribe</a> so you don’t miss yours.
-	</p>
+	<div class="content">
+		While <span class="strong">attendance is free</span>, you still need a ticket.
+		<br/><br/>
+		Tickets will go out in <span class="strong">three rounds</span>:<br/>February 18th, <br/>February 25th, <br />March 4th.
+		<br/><br/>
+		<span class="strong">If you're not from Slovenia, you get first dibs on tickets.</span><br/><a href="#contact">Let us know.</a>
+		<br/><br/>
+		<span class="strong">Mailing list subscribers get tickets sooner.<br/></span><a href="#mailing">Subscribe</a> so you don’t miss yours.
+	</div>
 </div>
 	<div class="divider-photo">
 		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3326-2.jpg">
-		</div>
+	</div>
 <div class="slide" id="location">
 	<div class="divider primary">
 		<p>location</p>
 	</div>
-	<p class="content">We thank the <a href="http://www.fri.uni-lj.si/en/about/">Faculty of Computer and Information Science in Ljubljana</a> for hosting us. The Faculty is a leading research and teaching institution for information sciences with several active research groups and distinguished alumni.</p>
-		<div id="disapear-on-click"><p class="location-zoom">Click to zoom!</p>
+	<p class="content">We thank the <a href="http://www.fri.uni-lj.si/en/about/">Faculty of Computer and Information Science in Ljubljana</a> for hosting us. <br/><span class="strong">The Faculty is a leading research and teaching institution for information sciences</span> with several active research groups and distinguished alumni.</p>
+		<div id="disapear-on-click">
+			<p class="location-zoom">Click to zoom!</p>
 		</div>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2769.021058795885!2d14.472292399999999!3d46.0506782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47652d52dfb93cd7%3A0xbfcd354b74411729!2sVe%C4%8Dna+pot+113%2C+1000+Ljubljana!5e0!3m2!1sen!2ssi!4v1408359697852" frameborder="0" style="border:0; width: 70%;
 	height: 400px;"></iframe>
@@ -157,12 +110,11 @@ title: WebCamp Ljubljana 2015
 	</div>	
 	<p class="content">
 		<a href="http://www.fri.uni-lj.si/en/about/"><img class="responsive-image" src="/assets/img/fri-logo-2.png" /></a><br /><br />
-		This event would not be possible without the generous help of <a href="http://www.fri.uni-lj.si/en/about/">Faculty of Computer and Information Science</a>.
-		<br /><br />
-		They host other relevant events. Check out their <a href="http://www.fri.uni-lj.si/si/novice_in_dogodki/aktivne/">event list</a> and <a href="http://www.fri.uni-lj.si/si/izobrazevanje/">different post-graduate study programmes.</a>
+		This event would not be possible without the generous help of <span class="strong"><a href="http://www.fri.uni-lj.si/en/about/">Faculty of Computer and Information Science</a>.<br/>
+		They host other relevant events.</span> Check out their <a href="http://www.fri.uni-lj.si/si/novice_in_dogodki/aktivne/">event list</a> and <a href="http://www.fri.uni-lj.si/si/izobrazevanje/">different post-graduate study programmes.</a>
 		<br /><br /><br />
 		<a href="http://codecatz.github.io/"><img src="/assets/img/codecatz-logo.png" style="width:150px; height:auto;" /><br /><br /></a>
-		<a href="http://codecatz.github.io/">CodeCatz</a> have been a huge help with our web site, and have given us a lot of ideas and encouragement.
+		<span class="strong"><a href="http://codecatz.github.io/">CodeCatz</a></span> have been a huge help with our web site, and have given us a lot of ideas and encouragement.
 	</p>
 </div>
 <div class="slide" id="whattoexpect">
@@ -198,22 +150,12 @@ title: WebCamp Ljubljana 2015
 			</ul>
 		</div>
 		<div class="outside-link">
-			<a href="http://video.webcamp.si/">Here is a link to videos of last years talks! 
-				Check it out!</a>
+			<a href="http://video.webcamp.si/">Watch last years talks! 
+			</a>
 		</div>
 	</div>
 	</div>
 </div>
-
-{% comment %}
-<div class="slide" id="sponsors">
-	<div class="divider primary">
-		<p>thank you</p>
-	</div>
-	<p class="content">We thank our wonderful sponsors:</p>
-</div>
-{% endcomment %}
-
 <div class="slide" id="team">
 	<div class="divider primary">
 			<p>team</p>
@@ -230,7 +172,6 @@ title: WebCamp Ljubljana 2015
 			<li>Tina Rozman</li>
 			<li>Nataša Šubelj</li>
 		</ul>
-
 		<strong>Talks Committee</strong>
 		<ul style="list-style:none;">
 			<li>Swizec Teller</li>
@@ -239,26 +180,32 @@ title: WebCamp Ljubljana 2015
 			<li>Srdjan Vranac</li>
 		</ul>
 	</div>
-
-	<div class="connect-div"></div>
 </div>
-
-<div class="slide" id="contact" >
+<div class="slide-transparent" id="contact" >
 	<div class="divider primary" id="contact">
 		<p>contact</p>
 	</div>
-	<p class="content">
-		
-			E-mail: <a href="mailto:info@webcamp.si">info@webcamp.si</a><br /><br />
-			Twitter: <a href="https://twitter.com/webcampsi">@webcampsi</a><br /><br />
-			Facebook: <a href="https://www.facebook.com/webcamp.si">WebCamp.si on Facebook</a><br /><br />
-			Phone: 041 893 765 (Jure Čuhalev)<br />
-		
-		<br /><br />
-		<a href="#mailing">Subscribe to our mailing list!</a>
-	</p>
-	
-	<div class="connect-div"></div>
+	<div class="content">
+		<div class="contact">
+			<a href="mailto:info@webcamp.si"><p>info@webcamp.si</p></a>
+		</div>
+		<div class="contact">
+			<p>Phone: 041 893 765 ( Jure Čuhalev )</p>
+		</div>
+		<div class="contact">
+			<a href="#mailing">Subscribe to our mailing list!</a>
+		</div>	
+		<div class="social">
+			<a href="https://twitter.com/webcampsi">
+			<img src="{{ site.baseurl }}/assets/img/icons/twitter.svg" style="width:70px; height:70px;">
+		</a>
+		</div>
+		<div class="social">
+			<a href="https://www.facebook.com/webcamp.si">
+			<img src="{{ site.baseurl }}/assets/img/icons/facebook-square.svg" style="width:70px; height:70px;">
+		</a>
+		</div>		
+	</div>
 </div>
 
 {% include footer.html %}
