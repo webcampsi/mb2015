@@ -364,7 +364,7 @@ html, body {
 		}
 		display: block;
 		color: white;
-		text-align: right;
+		text-align: center;
 		line-height: 1;
 		@include center(y);
 	}
@@ -372,12 +372,16 @@ html, body {
 	@include MQ(M) {
 		p {
 			font-size: 3em;
+			text-align: left;
+			margin-left:100px;
 		}
 	}
 
 	@include MQ(L) {
 		p {
 			font-size: 3em;
+			text-align: left;
+			margin-left:100px;
 		}
 	}
 }
