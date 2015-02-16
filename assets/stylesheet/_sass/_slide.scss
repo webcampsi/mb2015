@@ -152,3 +152,16 @@ iframe {
 		display:block;
 	}
 }
+
+.slide-contact {
+	height: auto;
+}
+
+
+
+
+@include MQ(L) {
+	.slide-contact {
+		height: 1000px;
+	}
+}
