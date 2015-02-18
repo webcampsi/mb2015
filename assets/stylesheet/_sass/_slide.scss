@@ -181,9 +181,3 @@ iframe {
 		height: 800px;
 	}
 }
-
-@include MQ(XL) {
-	.slide-contact {
-		height: 1200px;
-	}
-}
