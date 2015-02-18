@@ -60,18 +60,18 @@ iframe {
 		font-size: 20px;
 		text-align:center;
 		padding: 15px;
-
-		a {
-			text-align:center;
-			font-family:$body-font;
-			color:white;
-			font-weight:700;
-		}
 	}	
 
 	&:hover  {
 		background-color:$secondary-color;
 	}
+}
+
+.button-link {
+	text-align:center;
+	font-family:$body-font;
+	color:white;
+	font-weight:700;
 }
 
 @include MQ(M) {
