@@ -8,7 +8,9 @@ jQuery(document).ready(function($) {
 		$(window).on('scroll', { previousScroll: 0 }, function () {
 			var currentScroll = $(this).scrollTop();
 			if (currentScroll > this.previousScroll) {
-				$('#header').slideUp(200);
+				if (currentScroll > headerHeight) {
+					$('#header').slideUp(200);
+				}
 			} else {
 				$('#header').slideDown(200);
 			}
