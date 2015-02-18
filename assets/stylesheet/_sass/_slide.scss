@@ -89,6 +89,24 @@ iframe {
 	}
 }
 
+.tickets {
+	margin-left:10%;
+	margin-bottom: 70px;
+}
+
+@include MQ(M) {
+	.tickets {	
+		margin-left:0;
+	}
+}
+
+
+@include MQ(L) {
+	.tickets {
+		margin-left:0;
+	}
+}
+
 .photos {
 	padding-left:0;
 	display:block;
@@ -158,9 +176,13 @@ iframe {
 }
 
 
-
-
 @include MQ(L) {
+	.slide-contact {
+		height: 800px;
+	}
+}
+
+@include MQ(XL) {
 	.slide-contact {
 		height: 1200px;
 	}
