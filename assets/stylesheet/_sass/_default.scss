@@ -87,8 +87,8 @@ html, body {
 	}
 }
 
-.header {
-	position: absolute;
+#header {
+	position: fixed;
 	top: 0;
 	right: 0;
 	height: 120px;
