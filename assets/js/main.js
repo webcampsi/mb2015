@@ -22,14 +22,14 @@ jQuery(document).ready(function($) {
 			}
 			this.previousScroll = currentScroll;
 		});
+
+		$('#header a').on('click', function(e){
+			handleScroll = false;
+			$('#header').slideUp(200);
+		});
 	}
+
 	$('#disapear-on-click').on('click', function () {
 		$(this).hide();
-	});
-
-	$('#header a').on('click', function(e){
-		handleScroll = false;
-		$('#header').slideUp(200);
-		
-	})	
+	});	
 });
