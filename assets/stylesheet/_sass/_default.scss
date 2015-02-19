@@ -97,6 +97,7 @@ html, body {
 	z-index: $header-zindex;
 	@include font-smoothing;
 
+
 	@include MQ(M) {
 		@include transition(background-color .3s);
 
@@ -154,8 +155,71 @@ html, body {
 	bottom: 0;
 	margin:0;
 	right: 0;
-	padding-right: 1em;
-	text-align: center;
+	padding: 0.3em;
+	text-align:center;
+	background-color: $background-color;
+
+	li {
+		display: inline-block;
+		padding: 0.5em;
+		margin-bottom:0;
+	}
+
+	a { 
+		font: {
+			family: $title-font;
+			weight: 400;
+			size: 12px;
+		}
+		display: inline-block;
+		color: $primary-color;
+		text-transform: uppercase;
+
+		&:hover {
+			color: white;
+		}
+	}
+}
+
+@include MQ(M) {
+	.nav {
+		padding: 0 1em;
+		text-align: right;
+		@include center(y);
+	}
+
+	ul{
+		margin-top:0;
+	}
+
+	li {
+		padding: 0;
+	}
+}
+
+@include MQ(L) {
+	.nav {
+		padding: 0 1em;
+		text-align: right;
+		@include center(y);
+	}
+
+	ul{
+		margin-top:0;
+	}
+
+	li {
+		padding: 0;
+	}
+}
+
+.back {
+	width: 100%;
+	position: fixed;
+	margin:0;
+	right: 0;
+	text-align: right;
+	margin-right:10%;
 	background-color: $background-color;
 
 	li {
@@ -179,36 +243,6 @@ html, body {
 			color: white;
 		}
 	}
-}
-
-@include MQ(M) {
-	.nav {
-		padding-top:0;
-		text-align: right;
-		@include center(y);
-	}
-
-	ul{
-		margin-top:0;
-	}
-}
-
-@include MQ(L) {
-	.nav {
-		padding-top:0;
-		text-align: right;
-		@include center(y);
-	}
-
-	ul{
-		margin-top:0;
-	}
-}
-
-.back {
-	@extend .nav;
-	text-align: center;
-	bottom:1em;
 }
 
 .intro {
