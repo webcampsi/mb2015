@@ -26,7 +26,6 @@ jQuery(document).ready(function($) {
 		$('#header a').on('click', function(e){
 			handleScroll = false;
 			$('#header').slideUp(200);
-		
 		});
 	}
 
