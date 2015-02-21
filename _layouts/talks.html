@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="slide">
+	<div class="content">
+		<h1>{{ page.name }}</h1>
+		<h2>{{ page.title }}</h2>
+		<div>
+			{{ content }}
+		</div>
+		<a href="{{ site.baseurl }}/#talks" class="back">< Back to talks</a>
+	</div>
+</section>
+
+{% include footer.html %}

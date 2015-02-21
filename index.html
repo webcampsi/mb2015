@@ -27,7 +27,7 @@ title: WebCamp Ljubljana 2015
 	<div class="divider-photo">
 		<img src="{{ site.baseurl }}/assets/img/2014/IMG_3398.jpg">
 	</div>
-
+<!--
 <div class="slide" id="talks">
 	<div class="divider primary">
 		<p>talks / schedule</p>
@@ -41,32 +41,39 @@ title: WebCamp Ljubljana 2015
 		</ul>
 		<a href="#mailing">Subscribe to our mailing list</a> and you'll be the first to know. </br></br>Tickets will also be announced on the mailing list.
 	</div>
-</div>
-<!--
+</div>-->
+
+<!--   -->
+
 <div class="slide-transparent" id="talks">
 	<div class="divider primary">
 		<p>talks / schedule</p>
 	</div>
 	<div class="members">
-	{% for member in site.data.members %}
+	{% for post in site.posts %}
+	{% if post.role != talk %}
 		<div class="members-one">
-			<a class="" href="{{ site.baseurl }}/talks/{{ member.page|downcase }}/">
+			<a class="" href="{{ site.baseurl }}{{ post.url }}">
 				<div class="talk-info">
 						<h2 class="member-name" href="/members/{{ member.name|downcase }}/">
-							{{ member.name }}
+							{{ post.name }}
 						</h2>
 						<h2 class="talk-title" href="/members/{{ member.name|downcase }}/">
-							{{ member.title }}
+							{{ post.title }}
 						</h2>
 						<p class="talk-role">
-							[ {{ member.role }} ]
+							[ {{ post.track }} ]
 						</p>
 				</div>
 			</a>
 		</div>
+		{% endif %}
 		{% endfor %}
 	</div>
-</div>-->
+</div>
+
+<!--  -->
+
 <div class="divider-photo">
 	<img src="{{ site.baseurl }}/assets/img/2014/IMG_3334-2.jpg">
 </div>
