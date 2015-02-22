@@ -51,7 +51,7 @@ title: WebCamp Ljubljana 2015
 	</div>
 	<div class="members">
 	{% for post in site.posts %}
-	{% if post.role != talk %}
+	{% if post.role == 'talk' %}
 		<div class="members-one">
 			<a class="" href="{{ site.baseurl }}{{ post.url }}">
 				<div class="talk-info">
