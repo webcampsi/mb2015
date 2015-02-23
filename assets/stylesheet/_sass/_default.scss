@@ -231,7 +231,8 @@ html, body {
 }
 
 .intro {
-	height: 140%;
+	// height: 140%;
+	height: 100%;
 	z-index: $content-zindex;
 	@include font-smoothing;
 	left: 0;
