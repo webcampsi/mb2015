@@ -4,8 +4,11 @@
 	width:100%;
 	text-align: center; 
 	margin: 0 auto;
+
+	margin-top: -100px;
 }
 
+/*
 .sponsors-one{
 	display: inline-table;
 	margin:2%;
@@ -18,6 +21,7 @@
 		height:auto;
 	}
 }
+*/
 
 .sponsor-name {
 	font: {
@@ -25,4 +29,13 @@
 		weight: 400;
 	};
 	color: rgba($black, .7);
+}
+
+
+.marand {
+	// margin-top: -20px;
+}
+
+.marand img {
+	width: 400px;
 }

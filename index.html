@@ -159,7 +159,7 @@ title: WebCamp Ljubljana 2015
 		<div class="sponsors">
 		{% for post in site.posts %}
 			{% if post.role == 'sponsor' %}
-			<div class="sponsors-one">
+			<div class="sponsors-one {{ post.permalink }}">
 				<a href="{{ site.baseurl }}{{ post.url }}">
 					<img src="{{ site.baseurl }}{{ post.image }}"/>
 				</a>
