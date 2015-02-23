@@ -1,6 +1,6 @@
 ---
 name: Žan Anderle
-title: "Developer to Developers: UX guide"
+title: User Experience at Datafy.it - mistakes made and lessons learned
 permalink: Zan-Anderle
 role: talk
 track: Front-end
