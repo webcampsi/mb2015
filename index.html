@@ -155,20 +155,48 @@ title: WebCamp Ljubljana 2015
 	<div class="divider primary">
 		<p>sponsors</p>
 	</div>
-	<div class="content">
-		A great big THANK YOU goes out to our sponsors...
-	</div>
-		<div class="sponsors">
+		<!--<div class="sponsors">
 		{% for post in site.posts %}
 			{% if post.role == 'sponsor' %}
 			<div class="sponsors-one {{ post.permalink }}">
 				<a href="{{ site.baseurl }}{{ post.url }}">
 					<img src="{{ site.baseurl }}{{ post.image }}"/>
 				</a>
+				<div class="sponsor-one">
+					<a href="{{ page.link }}">{{ page.homepage }}</a>
+				</div>
 			</div>
 			{% endif %}
 		{% endfor %}
+		</div>-->
+		<div class="content-sponsors">
+		<div class="sponsors">
+			<div class="sponsor-one marand">
+				<a href="{{ site.baseurl }}/marand">
+					<img src="{{ site.baseurl }}/assets/img/sponsors/marand.png"/>
+				</a>
+			</div>
+				<div class="sponsor-one">
+					Marand is a internationally recognized and awarded solution provider in healthcare offering products including Think!Med Clinical™, Think!EHR Platform and EhrScape.com. <a href="{{ site.baseurl }}/marand">> Read more</a></br></br>
+					<a href="http://www.marand.si">Marand.si</a>
+					<a href="http://www.marand.si/zaposlitve">Marand.si/zaposlitve</a>
+					<a href="https://www.linkedin.com/company/marand">Marand on LinkedIn</a>
+				</div>
 		</div>
+		<div class="sponsors">
+			<div class="sponsor-one celtra">
+				<a href="{{ site.baseurl }}/celtra">
+					<img src="{{ site.baseurl }}/assets/img/sponsors/celtra2.png" style="height:auto; width:200px;"/>
+				</a>
+			</div>
+				<div class="sponsor-one">
+					Celtra is one of the fastest growing companies in mobile advertising today. </br></br><a href="{{ site.baseurl }}/celtra">> Read more</a></br></br>
+					<a href="http://celtra.com">Celtra.si</a>
+					<a href="http://celtra.com/about/blog">celtra.com/about/blog</a>
+					<a href="https://twitter.com/celtramobile">@celtramobile</a>
+				</div>
+		</div>
+	</div>
 </div>
 
 <!--  -->

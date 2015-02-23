@@ -8,6 +8,16 @@
 	margin: 5% auto;
 }
 
+.talks-one{
+	margin-top:5%;
+	padding:20px;
+	position:relative;
+	left:10%;
+	width: 80%;
+	height: auto;
+	background-color:rgba($white-trans, .7);
+}
+
 .talk-title {
 	font: {
 		size: 0.9em;
@@ -29,6 +39,7 @@
 }
 
 .talk-info {
+	height:10em;
 	position:relative;
 	background-color:rgba($white-trans, .5);
 	padding:10px;
