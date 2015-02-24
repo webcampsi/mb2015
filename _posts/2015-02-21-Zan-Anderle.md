@@ -3,7 +3,7 @@ name: Žan Anderle
 title: User Experience at Datafy.it - mistakes made and lessons learned
 permalink: Zan-Anderle
 role: talk
-track: Front-end
+track: Other
 layout: talks
 ---
 
