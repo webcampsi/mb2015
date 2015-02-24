@@ -360,10 +360,11 @@ html, body {
 }
 
 .main-content {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	left: 0;
 	z-index: $content-zindex;
+	margin-top:200px;
 }
 
 .slides {
