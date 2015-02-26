@@ -45,4 +45,14 @@
 	padding:10px;
 }
 
-
+.talker-page-name {
+	margin-top:50px;
+	font: {
+		size: 1.3em;
+		weight: 700;
+		family: $body-font;
+	};
+	padding: 0.5em 0 0;
+	color: $primary-color;
+	position:relative;
+}
