@@ -52,7 +52,8 @@ title: WebCamp Ljubljana 2015
 		<p>talks / schedule</p>
 	</div>
 	<div class="talkers">
-	{% for post in site.posts %}
+	{% assign posts = site.posts | sort:"name" %}
+	{% for post in posts %}
 		{% if post.role == 'talk' %}
 		<div class="talkers-one">
 			<a class="" href="{{ site.baseurl }}{{ post.url }}">
