@@ -3,7 +3,7 @@ name: Kenan Salihbegovic
 title: Understanding databases for distributed Docker applications.
 permalink: Kenan-Salihbegovic
 role: talk
-track: Front-end
+track: DevOps
 layout: talks
 ---
 
