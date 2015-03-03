@@ -512,3 +512,7 @@ footer {
 		@include center(y);
 	}
 }
+
+.img-responsive {
+	max-width: 50%;
+}
