@@ -4,7 +4,7 @@ title: CubeSensors
 permalink: CubeSensors
 role: iot
 layout: iot
-image: /assets/img/iot/CubeSensors.png
+image: /assets/img/iot/CubeSensors.jpg
 ---
 
 We make small, stylish and connected Cubes that monitor your indoor environment, so we'll be able to see whether the environment at WebCamp is giving everyone a headache. Our Base station is based on Raspberry Pi Model B, and we also have an [API](https://my.cubesensors.com/docs) that can be used for interesting web projects.
