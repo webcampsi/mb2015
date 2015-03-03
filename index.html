@@ -110,8 +110,8 @@ title: WebCamp Ljubljana 2015
 		<p>Internet of Things Corner</p>
 	</div>
 	<div class="talkers">
-	{% assign posts = site.posts | sort:"name" %}
-	{% for post in posts %}
+	{% assign posts = site.posts | sort:"title" %}
+	{% for post in posts reversed %}
 		{% if post.role == 'iot' %}
 		<div class="talkers-one">
 			<a class="" href="{{ site.baseurl }}{{ post.url }}">
