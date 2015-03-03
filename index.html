@@ -111,7 +111,7 @@ title: WebCamp Ljubljana 2015
 	</div>
 	<div class="talkers">
 	{% assign posts = site.posts | sort:"title" %}
-	{% for post in posts reversed %}
+	{% for post in posts %}
 		{% if post.role == 'iot' %}
 		<div class="talkers-one">
 			<a class="" href="{{ site.baseurl }}{{ post.url }}">
