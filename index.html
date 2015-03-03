@@ -115,11 +115,10 @@ title: WebCamp Ljubljana 2015
 		{% if post.role == 'iot' %}
 		<div class="talkers-one">
 			<a class="" href="{{ site.baseurl }}{{ post.url }}">
-				<div class="talk-info">
-						<h2 class="talker-name">
-							{{ post.name }}
-						</h2>
-						<h2 class="talk-title">
+				{% if post.image %}
+				<div style="background-image: url({{ site.baseurl }}{{ post.image }}); background-size: 100% auto;" class="iot-talk-info">
+				{% else %}<div class="iot-talk-info">{% endif %}
+						<h2 class="iot-project">
 							{{ post.title }}
 						</h2>
 				</div>

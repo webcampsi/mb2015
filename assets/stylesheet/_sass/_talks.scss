@@ -29,6 +29,7 @@
 	position:relative;
 }
 
+
 .talk-role {
 	font: {
 		size: 0.7em;
@@ -55,4 +56,36 @@
 	padding: 0.5em 0 0;
 	color: $primary-color;
 	position:relative;
+}
+
+.iot-talk-info {
+	height:10em;
+	position:relative;
+	background-color:rgba($white-trans, .5);
+	padding:0px;
+}
+
+.iot-project {
+	font: {
+		size: 1em;
+		weight: 400;
+	};
+	color: $primary-color;
+	background-color:rgba($white-trans, .8);
+	padding:10px;
+}
+
+.iot-project-page {
+	font: {
+		size: 1.5em;
+		weight: 700;
+		family: $body-font;
+	};
+	padding: 0.5em 0 0;
+	color: $primary-color;
+	position:relative;
+}
+
+.iot-photo {
+	width: 100%;
 }
