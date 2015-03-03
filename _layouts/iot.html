@@ -6,6 +6,9 @@ layout: default
 	<div class="content">
 		<h1 class="talker-page-name">{{ page.title }}</h1>
 		<p>Presented by {{ page.name }}</p>
+		{% if page.image %}
+		<img src="{{ site.baseurl }}{{ page.image }}" class="img-responsive" />
+		{% endif %}
 		<div>
 			{{ content }}
 		</div>
