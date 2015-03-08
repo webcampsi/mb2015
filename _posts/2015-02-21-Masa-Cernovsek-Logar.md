@@ -7,4 +7,6 @@ track: Front-end
 layout: talks
 ---
 
-I will explain my process of learning HTML and CSS, preprocessors and all the turmoil that comes with it. Going through numerous tutorials, I will say a word or two about things you won't find in them. I learned about semantic HTML the hard way and midway through I found preprocessors such as Sass. At the end, I will present Jekyll as free tool that everyone could use.
+I will start by explaining my process of learning HTML and CSS, preprocessors and all the turmoil that comes with it. Having found this awesome tool, I can start building. 
+
+As an architect I cannot have function without form, so I will present some basic design principles you can use in building webs.
