@@ -183,7 +183,8 @@ title: WebCamp Ljubljana 2015
 	<div class="divider primary">
 		<p>sponsors</p>
 	</div>
-		<!--<div class="sponsors">
+		{% comment %}
+		<div class="sponsors">
 		{% for post in site.posts %}
 			{% if post.role == 'sponsor' %}
 			<div class="sponsors-one {{ post.permalink }}">
@@ -196,7 +197,8 @@ title: WebCamp Ljubljana 2015
 			</div>
 			{% endif %}
 		{% endfor %}
-		</div>-->
+		</div>
+		{% endcomment %}
 		<div class="content-sponsors">
 		<div class="sponsors">
 			<div class="sponsor-one marand">
@@ -217,19 +219,60 @@ title: WebCamp Ljubljana 2015
 					<img src="{{ site.baseurl }}/assets/img/sponsors/celtra2.png" style="height:auto; width:200px;"/>
 				</a>
 			</div>
-				<div class="sponsor-one">
-					Celtra empowers agencies, media suppliers and brand leaders alike with an integrated, truly scalable cross-screen HTML5 technology for brand advertising on smartphones, tablets and desktop. AdCreator 4 is built to run large-scale and complex campaigns. It is a single platform for streamlined ad creation, performance optimized serving and consolidated reporting with common metrics across all screens.
-					<br /><br />
-					Celtra is one of the fastest growing companies in mobile advertising today. AdCreator 4, our award-winning platform for creating, serving and analysing mobile ads is used by Rovio, Time Inc., Google, Amazon, Yahoo, Weather Channel and many others.
-					<br /><br />
-					Our engineers spend their days building a product we all love and share a passion for, making mobile browsers jump through hoops, making big data look small and doing the humanity a favor by making it incredibly easy to build ads people actually tap on.
-					<br /><br />
-					Our offices in Ljubljana, Boston, San Francisco, New York, Los Angeles, Chicago, London and Tokyo are always full of talent, laughter, action, innovative ideas and snacks.
-					</br></br>
-					<a href="http://celtra.com">Celtra.com</a></br>
-					<a href="http://celtra.com/about/blog">celtra.com/about/blog</a></br>
-					<a href="https://twitter.com/celtramobile">@celtramobile</a>
-				</div>
+			<div class="sponsor-one sponsor-text">
+				Celtra empowers agencies, media suppliers and brand leaders alike with an integrated, truly scalable cross-screen HTML5 technology for brand advertising on smartphones, tablets and desktop. AdCreator 4 is built to run large-scale and complex campaigns. It is a single platform for streamlined ad creation, performance optimized serving and consolidated reporting with common metrics across all screens.
+				<br /><br />
+				Celtra is one of the fastest growing companies in mobile advertising today. AdCreator 4, our award-winning platform for creating, serving and analysing mobile ads is used by Rovio, Time Inc., Google, Amazon, Yahoo, Weather Channel and many others.
+				<br /><br />
+				Our engineers spend their days building a product we all love and share a passion for, making mobile browsers jump through hoops, making big data look small and doing the humanity a favor by making it incredibly easy to build ads people actually tap on.
+				<br /><br />
+				Our offices in Ljubljana, Boston, San Francisco, New York, Los Angeles, Chicago, London and Tokyo are always full of talent, laughter, action, innovative ideas and snacks.
+				</br></br>
+				<a href="http://celtra.com">Celtra.com</a></br>
+				<a href="http://celtra.com/about/blog">celtra.com/about/blog</a></br>
+				<a href="https://twitter.com/celtramobile">@celtramobile</a>
+			</div>
+		</div>
+		<div class="sponsors">
+			<div class="sponsor-one celtra sponsor-left">
+				<a href="http://bevog.at/" target="_blank">
+					<img src="{{ site.baseurl }}/assets/img/sponsors/bevog.png" style="height:auto; width:200px;"/>
+				</a>
+			</div>
+			<div class="sponsor-one sponsor-text">
+				<a href="http://bevog.at/">Bevog microbrewery</a> is the fruit of inquisitiveness and aspiration towards discovering new beer-drinking experiences; it is the result of enthusiasm, love and zeal. We brew beers with character and soul. Our goal is to transcend the limits of the known and ordinary.
+				<br /><br />
+				<a href="http://bevog.at/">Bevog.at</a></br>
+			</div>
+		</div>
+		<div class="sponsors">
+			<div class="sponsor-one celtra sponsor-left">
+				<a href="http://www.buna.si/" target="_blank">
+					<img src="{{ site.baseurl }}/assets/img/sponsors/buna.png" style="height:auto; width:200px;" />
+				</a>
+			</div>
+			<div class="sponsor-one sponsor-text">
+				Ensuring freshness, price transparency, revealing the origin  of products and environmental responsibility are 4 key elements of the <a href="http://www.buna.si/">Buna concept</a>.
+				<br /><br />
+				Each Buna product is accompanied with information about its ORIGIN. Raw materials and products used in preparation of Buna come from the Fair Trade system or are made in accordance with its principles. We aim for the shortest possible trade chain between the grower, the producer and the consumer in order to guarantee FRESHNESS of our products.  By revealing the details of our price structure we ensure TRANSPARENCY to our customers. Buna users will be able to adjust their price by reusing the packaging of Buna, joining us and the people we work with in ENVIRONMENTAL RESPONSIBILITY.
+
+				<br /><br />
+				<a href="http://www.buna.si/">Buna.si</a></br>
+			</div>
+		</div>
+		<div class="sponsors">
+			<div class="sponsor-one celtra sponsor-left">
+				<a href="http://cognitea.com/" target="_blank">
+					<img src="{{ site.baseurl }}/assets/img/sponsors/cognitea.png" style="height:auto; width:200px;"/>
+				</a>
+			</div>
+			<div class="sponsor-one sponsor-text">
+				<a href="http://cognitea.com/">CogniTea</a> is an energizing tea that promotes mental clarity and focus without the typical jitters, headache, or crash. Made with 100 mg of L-Theanine and 90 mg of natural Caffeine which work synergistically to promote concentration, alertness, and focus and to inhibit the negative side effects of caffeine alone.
+				<br /><br />
+				CogniTea proudly powers today’s innovators all over the world including notable companies 500 Startups, Dropbox, Life is Good, Indiegogo, and WeWork.
+				<br /><br />
+				<a href="http://cognitea.com/">CogniTea</a>
+			</div>
 		</div>
 	</div>
 </div>
