@@ -156,30 +156,38 @@ title: WebCamp Ljubljana 2015
 			<div class="cbp_tmicon"></div>
 			<div class="cbp_tmlabel">
 				<h2>9:30 - Talks</h2>
-				<p>We will start with first set of talks.</p>
 				<div class="talks-schedule">
-					<h2>Room 1</h2>
-					<ul>
-						<li>9:30 Filip</li>
-						<li>10:00 Taj</li>
-						<li>10:30 Luka</li>
-					</ul>
-				</div>
-				<div class="talks-schedule">
-					<h2>Room 2</h2>
-					<ul>
-						<li>9:30 Alja</li>
-						<li>10:00 Goran</li>
-						<li>10:30 Maša</li>
-					</ul>
-				</div>
-				<div class="talks-schedule">
-					<h2>Room 3</h2>
-					<ul>
-						<li>9:30 Luka</li>
-						<li>10:00 Domen</li>
-						<li>10:30 Bogdan</li>
-					</ul>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th class="room">Room 1</th>
+								<th class="room">Room 2</th>
+								<th class="room">Room 3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>9:30</td>
+								{% include talk.html name="Filip-Muki-Dobranic" %}
+								{% include talk.html name="Alja-Isakovic" %}
+								{% include talk.html name="Luka-Muzinic" %}
+							</tr>
+							<tr>
+								<td>10:00</td>
+								{% include talk.html name="Taj-Pelc" %}
+								{% include talk.html name="Goran-Blazic" %}
+								{% include talk.html name="Domen-Kozar" %}
+								
+							</tr>
+							<tr>
+								<td>10:30</td>
+								{% include talk.html name="Zan-Anderle" %}
+								{% include talk.html name="Masa-Cernovsek-Logar" %}
+								{% include talk.html name="Bogdan-Habic" %}
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</li>
@@ -203,28 +211,36 @@ title: WebCamp Ljubljana 2015
 				<h2>11:30 - Talks</h2>
 				<p>Second set of talks starts.</p>
 				<div class="talks-schedule">
-					<h2>Room 1</h2>
-					<ul>
-						<li>11:30 Jernej</li>
-						<li>12:00 Kenan</li>
-						<li>12:30 Vranac</li>
-					</ul>
-				</div>
-				<div class="talks-schedule">
-					<h2>Room 2</h2>
-					<ul>
-						<li>11:30 Mateja</li>
-						<li>12:00 Zoran</li>
-						<li>12:30 Ivan</li>
-					</ul>
-				</div>
-				<div class="talks-schedule">
-					<h2>Room 3</h2>
-					<ul>
-						<li>11:30 Vladan</li>
-						<li>12:00 Miloš</li>
-						<li>12:30 Nikola</li>
-					</ul>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th class="room">Room 1</th>
+								<th class="room">Room 2</th>
+								<th class="room">Room 3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>11:30</td>
+								{% include talk.html name="Jernej-Virag" %}
+								{% include talk.html name="Mateja-Rajter" %}
+								{% include talk.html name="Vladan-Mitevski" %}
+							</tr>
+							<tr>
+								<td>12:00</td>
+								{% include talk.html name="Kenan-Salihbegovic" %}
+								{% include talk.html name="Zoran-Plesko" %}
+								{% include talk.html name="Milos-Boskovic" %}
+							</tr>
+							<tr>
+								<td>12:30</td>
+								{% include talk.html name="Srdjan-Vranac" %}
+								{% include talk.html name="Ivan-Lucin" %}
+								{% include talk.html name="Nikola-Plejic" %}
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</li>

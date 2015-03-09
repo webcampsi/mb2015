@@ -1,0 +1,6 @@
+{% assign posts = (site.posts | where: "permalink", include.name ) %}
+{% for post in posts %}
+	<td class="room">
+		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+	</td>
+{% endfor %}
