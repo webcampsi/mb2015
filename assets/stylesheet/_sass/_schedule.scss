@@ -46,6 +46,7 @@
 	text-align:left;
 }
 
+
 @include MQ(M) {
 		.cbp_tmtimeline > li .cbp_tmlabel {
 			padding: 2em;
@@ -118,7 +119,7 @@
 }
 
 .talks-schedule {
-	display: inline-block;
+	display: block;
 	margin: 15px 15px;
 
 	ul {
@@ -128,7 +129,20 @@
 }
 
 .room {
-	width: 30%;
-	padding-left: 10px;
-	padding-bottom: 5px;
+	margin: 0 0 15px 25%;
+	background: white;
+	color: $background-color;
+	padding: 1em;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	width:60%;
+	text-align:left;
 }
+
+.time {
+	display: block;
+	margin-top:10px;
+}
+

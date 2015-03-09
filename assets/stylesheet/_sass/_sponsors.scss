@@ -47,8 +47,19 @@
 }
 
 .sponsor-float-left {
-	float: left;
 	padding-right: 30px;
+}
+
+@include MQ(M) {
+	.sponsor-float-left {
+		float: left;
+	}
+}
+
+@include MQ(L) {
+	.sponsor-float-left {
+		float: left;
+	}
 }
 
 .sponsor-right-text {
